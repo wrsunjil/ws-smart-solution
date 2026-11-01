@@ -7,11 +7,13 @@ export const SITE_CONFIG = {
   description:
     'WS Smart Solution is a premier technology store, computer OS & battery service center, and full-stack software & IoT engineering studio.',
   contact: {
-    phone: '+880 1700-000000',
-    whatsapp: '8801700000000',
-    email: 'contact@wssmartsolution.pages.dev',
+    phone: '+880 9696-413977',
+    phoneTel: 'tel:+8809696413977',
+    whatsapp: 'wrsunjil',
+    whatsappUrl: 'https://wa.me/wrsunjil',
+    email: 'smartsolutionws@gmail.com',
     telegram: 'https://t.me/geminisub_bot',
-    address: 'Tech Service & Retail Center, Dhaka, Bangladesh',
+    address: 'Vatpara Bazar, Narsingdi, Bangladesh',
     businessHours: 'Saturday – Thursday: 9:30 AM – 9:00 PM',
   },
   stats: [
@@ -21,4 +23,3 @@ export const SITE_CONFIG = {
     { label: 'Happy Clients & Buyers', value: '99.4%' },
   ],
 };
-

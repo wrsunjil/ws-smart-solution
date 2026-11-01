@@ -1,22 +1,12 @@
 'use client';
 
 import React from 'react';
-import { MessageCircle, Phone } from 'lucide-react';
+import { MessageCircle } from 'lucide-react';
 import { SITE_CONFIG } from '@/data/siteConfig';
 
 export default function FloatingWhatsApp() {
   return (
-    <div className="fixed bottom-6 right-6 z-40 flex flex-col items-end gap-3">
-      {/* Quick Direct Call Button */}
-      <a
-        href={`tel:${SITE_CONFIG.contact.phone}`}
-        className="hidden sm:flex items-center gap-2 rounded-full border border-slate-200 bg-white px-4 py-2 text-xs font-bold text-slate-800 shadow-md hover:bg-slate-50 transition"
-        title="Call WS Smart Solution"
-      >
-        <Phone className="h-3.5 w-3.5 text-blue-600" />
-        <span>Direct Call</span>
-      </a>
-
+    <div className="fixed bottom-6 right-6 z-40">
       {/* WhatsApp Floating Action Pill */}
       <a
         href={`https://wa.me/${SITE_CONFIG.contact.whatsapp}?text=${encodeURIComponent(
@@ -33,4 +23,3 @@ export default function FloatingWhatsApp() {
     </div>
   );
 }
-

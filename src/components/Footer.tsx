@@ -121,7 +121,7 @@ export default function Footer() {
               <li className="flex items-center gap-2.5">
                 <Phone className="h-4 w-4 text-blue-600 shrink-0" />
                 <a
-                  href={`tel:${SITE_CONFIG.contact.phone}`}
+                  href={SITE_CONFIG.contact.phoneTel}
                   className="text-slate-700 hover:text-blue-600 transition"
                 >
                   {SITE_CONFIG.contact.phone}

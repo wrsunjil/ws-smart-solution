@@ -84,7 +84,7 @@ export default function ContactPage() {
                   Phone & WhatsApp Hotline
                 </h3>
                 <a
-                  href={`tel:${SITE_CONFIG.contact.phone}`}
+                  href={SITE_CONFIG.contact.phoneTel}
                   className="mt-0.5 block text-sm font-semibold text-slate-900 hover:text-blue-600"
                 >
                   {SITE_CONFIG.contact.phone}
