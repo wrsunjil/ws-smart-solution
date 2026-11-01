@@ -41,18 +41,18 @@ export default function Navbar() {
   };
 
   return (
-    <header className="sticky top-0 z-40 w-full border-b border-slate-800/80 bg-slate-950/90 backdrop-blur-xl">
-      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3.5 sm:px-6 lg:px-8">
+    <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md">
+      <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-3 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-gradient-to-br from-cyan-500 to-blue-600 text-white shadow-lg shadow-cyan-500/20 group-hover:scale-105 transition-transform">
+          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white shadow-sm group-hover:bg-blue-700 transition">
             <Cpu className="h-6 w-6" />
           </div>
           <div>
-            <span className="block text-lg font-extrabold tracking-tight text-white">
-              WS Smart <span className="text-cyan-400">Solution</span>
+            <span className="block text-lg font-extrabold tracking-tight text-slate-900">
+              WS Smart <span className="text-blue-600">Solution</span>
             </span>
-            <span className="block text-[11px] font-medium uppercase tracking-widest text-slate-400">
+            <span className="block text-[11px] font-semibold uppercase tracking-wider text-slate-500">
               wssmartsolution.pages.dev
             </span>
           </div>
@@ -67,10 +67,10 @@ export default function Navbar() {
               <Link
                 key={link.href}
                 href={link.href}
-                className={`flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-medium transition-all ${
+                className={`flex items-center gap-2 rounded-lg px-3.5 py-2 text-sm font-semibold transition-all ${
                   active
-                    ? 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/30'
-                    : 'text-slate-300 hover:bg-slate-800/70 hover:text-white'
+                    ? 'bg-blue-50 text-blue-700 border border-blue-200/60'
+                    : 'text-slate-600 hover:bg-slate-100 hover:text-slate-900'
                 }`}
               >
                 <Icon className="h-4 w-4" />
@@ -83,14 +83,14 @@ export default function Navbar() {
         {/* Right Actions */}
         <div className="flex items-center gap-2.5">
           {/* Currency Switcher */}
-          <div className="flex items-center rounded-lg border border-slate-800 bg-slate-900 p-0.5 text-xs font-semibold">
+          <div className="flex items-center rounded-lg border border-slate-200 bg-slate-50 p-0.5 text-xs font-semibold">
             <button
               type="button"
               onClick={() => setCurrency('BDT')}
               className={`rounded-md px-2.5 py-1 transition-all ${
                 currency === 'BDT'
-                  ? 'bg-cyan-500 text-slate-950 shadow'
-                  : 'text-slate-400 hover:text-white'
+                  ? 'bg-white text-blue-700 font-bold shadow-xs'
+                  : 'text-slate-500 hover:text-slate-900'
               }`}
               title="Display prices in Bangladeshi Taka (৳)"
             >
@@ -101,8 +101,8 @@ export default function Navbar() {
               onClick={() => setCurrency('USD')}
               className={`rounded-md px-2.5 py-1 transition-all ${
                 currency === 'USD'
-                  ? 'bg-cyan-500 text-slate-950 shadow'
-                  : 'text-slate-400 hover:text-white'
+                  ? 'bg-white text-blue-700 font-bold shadow-xs'
+                  : 'text-slate-500 hover:text-slate-900'
               }`}
               title="Display prices in US Dollars ($)"
             >
@@ -116,9 +116,9 @@ export default function Navbar() {
             onClick={() =>
               setBookingServiceTitle('Computer OS Installation / Battery Service')
             }
-            className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-emerald-500/40 bg-emerald-500/10 px-3.5 py-2 text-xs font-semibold text-emerald-300 hover:bg-emerald-500/20 transition-all cursor-pointer"
+            className="hidden sm:inline-flex items-center gap-1.5 rounded-lg border border-emerald-300 bg-emerald-50 px-3.5 py-2 text-xs font-bold text-emerald-800 hover:bg-emerald-100 transition cursor-pointer"
           >
-            <Wrench className="h-3.5 w-3.5" />
+            <Wrench className="h-3.5 w-3.5 text-emerald-600" />
             Book Service
           </button>
 
@@ -126,12 +126,12 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setIsCartOpen(true)}
-            className="relative flex items-center gap-2 rounded-lg bg-gradient-to-r from-cyan-500 to-blue-600 px-3.5 py-2 text-xs font-bold text-slate-950 shadow-md shadow-cyan-500/20 hover:brightness-110 transition-all cursor-pointer"
+            className="relative flex items-center gap-2 rounded-lg bg-blue-600 px-3.5 py-2 text-xs font-bold text-white shadow-sm hover:bg-blue-700 transition cursor-pointer"
             aria-label="Open Shopping Cart"
           >
-            <ShoppingCart className="h-4 w-4 stroke-[2.5]" />
+            <ShoppingCart className="h-4 w-4" />
             <span className="hidden md:inline">Cart</span>
-            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-slate-950 px-1.5 text-[11px] font-extrabold text-cyan-400">
+            <span className="flex h-5 min-w-5 items-center justify-center rounded-full bg-white px-1.5 text-[11px] font-extrabold text-blue-700">
               {totalItems}
             </span>
           </button>
@@ -140,7 +140,7 @@ export default function Navbar() {
           <button
             type="button"
             onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
-            className="flex lg:hidden items-center justify-center rounded-lg border border-slate-800 bg-slate-900 p-2 text-slate-300 hover:text-white"
+            className="flex lg:hidden items-center justify-center rounded-lg border border-slate-200 bg-slate-50 p-2 text-slate-700 hover:bg-slate-100"
             aria-label="Toggle Menu"
           >
             {mobileMenuOpen ? <X className="h-5 w-5" /> : <Menu className="h-5 w-5" />}
@@ -150,7 +150,7 @@ export default function Navbar() {
 
       {/* Mobile Dropdown */}
       {mobileMenuOpen && (
-        <div className="border-t border-slate-800 bg-slate-950 px-4 py-4 lg:hidden">
+        <div className="border-t border-slate-200 bg-white px-4 py-4 lg:hidden shadow-lg">
           <div className="flex flex-col gap-1.5">
             {navLinks.map((link) => {
               const Icon = link.icon;
@@ -160,10 +160,10 @@ export default function Navbar() {
                   key={link.href}
                   href={link.href}
                   onClick={() => setMobileMenuOpen(false)}
-                  className={`flex items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-medium ${
+                  className={`flex items-center gap-3 rounded-lg px-3.5 py-2.5 text-sm font-semibold ${
                     active
-                      ? 'bg-cyan-500/15 text-cyan-400 border border-cyan-500/30'
-                      : 'text-slate-300 hover:bg-slate-900'
+                      ? 'bg-blue-50 text-blue-700 border border-blue-200'
+                      : 'text-slate-700 hover:bg-slate-100'
                   }`}
                 >
                   <Icon className="h-4 w-4" />
@@ -177,9 +177,9 @@ export default function Navbar() {
                 setMobileMenuOpen(false);
                 setBookingServiceTitle('Computer OS Installation / Battery Service');
               }}
-              className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg border border-emerald-500/40 bg-emerald-500/15 py-2.5 text-sm font-semibold text-emerald-300"
+              className="mt-2 flex w-full items-center justify-center gap-2 rounded-lg border border-emerald-300 bg-emerald-50 py-2.5 text-sm font-bold text-emerald-800"
             >
-              <Wrench className="h-4 w-4" />
+              <Wrench className="h-4 w-4 text-emerald-600" />
               Book OS / Battery Service
             </button>
           </div>
@@ -188,4 +188,3 @@ export default function Navbar() {
     </header>
   );
 }
-

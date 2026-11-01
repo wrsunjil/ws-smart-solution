@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import Footer from '@/components/Footer';
 import CartDrawer from '@/components/CartDrawer';
 import ServiceBookingModal from '@/components/ServiceBookingModal';
+import FloatingWhatsApp from '@/components/FloatingWhatsApp';
 import { SITE_CONFIG } from '@/data/siteConfig';
 import { PRODUCTS } from '@/data/products';
 import { SERVICES } from '@/data/services';
@@ -123,23 +124,23 @@ export default function RootLayout({
   };
 
   return (
-    <html lang="en" className="dark scroll-smooth">
+    <html lang="en" className="light scroll-smooth">
       <head>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       </head>
-      <body className="min-h-screen flex flex-col bg-slate-950 text-slate-100 antialiased selection:bg-cyan-500 selection:text-slate-950">
+      <body className="min-h-screen flex flex-col bg-slate-50 text-slate-900 antialiased selection:bg-blue-600 selection:text-white">
         <StoreProvider>
           <Navbar />
           <main className="flex-1">{children}</main>
           <Footer />
           <CartDrawer />
           <ServiceBookingModal />
+          <FloatingWhatsApp />
         </StoreProvider>
       </body>
     </html>
   );
 }
-

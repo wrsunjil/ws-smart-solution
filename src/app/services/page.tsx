@@ -38,16 +38,16 @@ export default function ServicesPage() {
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-16">
       {/* Hero Banner */}
-      <div className="rounded-3xl border border-emerald-500/30 bg-gradient-to-br from-slate-900 via-slate-950 to-emerald-950/30 p-8 sm:p-10">
+      <div className="rounded-3xl border border-emerald-200 bg-white p-8 sm:p-10 shadow-xs">
         <div className="max-w-3xl">
-          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-500/15 px-3 py-1 text-xs font-bold text-emerald-300">
-            <Wrench className="h-3.5 w-3.5" />
+          <span className="inline-flex items-center gap-1.5 rounded-full bg-emerald-50 border border-emerald-200 px-3 py-1 text-xs font-bold text-emerald-800">
+            <Wrench className="h-3.5 w-3.5 text-emerald-600" />
             WS Smart Solution Service Lab
           </span>
-          <h1 className="mt-3 text-3xl sm:text-4xl font-extrabold text-white">
+          <h1 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
             Computer OS Installation, Battery Servicing & Firmware Lab
           </h1>
-          <p className="mt-3 text-sm sm:text-base text-slate-300 leading-relaxed">
+          <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Whether your PC is running slow, needs a clean Windows 11 Pro or Linux setup, suffers from sudden battery drops, or requires custom OpenWrt/TV-box firmware flashing—our hardware lab delivers fast, guaranteed results.
           </p>
 
@@ -59,7 +59,7 @@ export default function ServicesPage() {
                   'Computer OS Installation & System Optimization'
                 )
               }
-              className="inline-flex items-center gap-2 rounded-xl bg-gradient-to-r from-emerald-500 to-teal-600 px-5 py-3 text-xs font-extrabold text-slate-950 shadow-lg shadow-emerald-500/20 hover:brightness-110 transition cursor-pointer"
+              className="inline-flex items-center gap-2 rounded-xl bg-emerald-600 px-5 py-3 text-xs font-extrabold text-white shadow-xs hover:bg-emerald-700 transition cursor-pointer"
             >
               <MonitorCheck className="h-4 w-4" />
               Book OS Installation
@@ -71,9 +71,9 @@ export default function ServicesPage() {
                   'Laptop, UPS & Lithium Battery Servicing & Rebuilding'
                 )
               }
-              className="inline-flex items-center gap-2 rounded-xl border border-cyan-500/40 bg-cyan-500/10 px-5 py-3 text-xs font-bold text-cyan-300 hover:bg-cyan-500/20 transition cursor-pointer"
+              className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-5 py-3 text-xs font-bold text-slate-700 hover:border-emerald-300 hover:text-emerald-700 transition shadow-xs cursor-pointer"
             >
-              <BatteryCharging className="h-4 w-4" />
+              <BatteryCharging className="h-4 w-4 text-emerald-600" />
               Book Battery Diagnostics
             </button>
           </div>
@@ -82,7 +82,7 @@ export default function ServicesPage() {
 
       {/* All Service Packages */}
       <div>
-        <h2 className="text-2xl font-extrabold text-white mb-6">
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-6">
           Detailed Service Packages & Transparent Pricing
         </h2>
         <div className="grid grid-cols-1 gap-6 lg:grid-cols-2">
@@ -93,12 +93,12 @@ export default function ServicesPage() {
       </div>
 
       {/* Our 4-Step Service Workflow */}
-      <div className="rounded-3xl border border-slate-800 bg-slate-900/40 p-8">
-        <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider mb-2">
+      <div className="rounded-3xl border border-slate-200 bg-white p-8 shadow-xs">
+        <div className="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider mb-2">
           <Cpu className="h-4 w-4" />
           <span>How Our Service Center Works</span>
         </div>
-        <h2 className="text-2xl font-extrabold text-white mb-6">
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-6">
           4-Step Diagnostic & Servicing Workflow
         </h2>
         <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 lg:grid-cols-4">
@@ -126,15 +126,15 @@ export default function ServicesPage() {
           ].map((item) => (
             <div
               key={item.step}
-              className="rounded-2xl border border-slate-800/80 bg-slate-950/70 p-5"
+              className="rounded-2xl border border-slate-200 bg-slate-50/70 p-5"
             >
-              <span className="text-xs font-extrabold text-cyan-400">
+              <span className="text-xs font-extrabold text-blue-600">
                 STEP {item.step}
               </span>
-              <h3 className="mt-1 text-base font-bold text-white">
+              <h3 className="mt-1 text-base font-bold text-slate-900">
                 {item.title}
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-slate-400">
+              <p className="mt-2 text-xs leading-relaxed text-slate-600">
                 {item.desc}
               </p>
             </div>
@@ -144,24 +144,24 @@ export default function ServicesPage() {
 
       {/* FAQ Section */}
       <div>
-        <div className="flex items-center gap-2 text-emerald-400 text-xs font-bold uppercase tracking-wider mb-2">
+        <div className="flex items-center gap-2 text-emerald-700 text-xs font-bold uppercase tracking-wider mb-2">
           <HelpCircle className="h-4 w-4" />
           <span>Common Questions</span>
         </div>
-        <h2 className="text-2xl font-extrabold text-white mb-6">
+        <h2 className="text-2xl font-extrabold text-slate-900 mb-6">
           OS Installation & Battery Service FAQs
         </h2>
         <div className="grid grid-cols-1 gap-4 md:grid-cols-2">
           {faqs.map((faq, idx) => (
             <div
               key={idx}
-              className="rounded-2xl border border-slate-800 bg-slate-900/50 p-5"
+              className="rounded-2xl border border-slate-200 bg-white p-5 shadow-xs"
             >
-              <h3 className="flex items-start gap-2 text-sm font-bold text-white">
-                <CheckCircle2 className="h-4 w-4 text-cyan-400 shrink-0 mt-0.5" />
+              <h3 className="flex items-start gap-2 text-sm font-bold text-slate-900">
+                <CheckCircle2 className="h-4 w-4 text-emerald-600 shrink-0 mt-0.5" />
                 <span>{faq.q}</span>
               </h3>
-              <p className="mt-2 text-xs leading-relaxed text-slate-300 pl-6">
+              <p className="mt-2 text-xs leading-relaxed text-slate-600 pl-6">
                 {faq.a}
               </p>
             </div>
@@ -171,4 +171,3 @@ export default function ServicesPage() {
     </div>
   );
 }
-

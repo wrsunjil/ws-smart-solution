@@ -41,14 +41,14 @@ export default function ContactPage() {
 
   return (
     <div className="mx-auto max-w-7xl px-4 py-12 sm:px-6 lg:px-8 space-y-12">
-      <div className="rounded-3xl border border-slate-800 bg-gradient-to-br from-slate-900 via-slate-950 to-cyan-950/30 p-8 sm:p-10">
-        <span className="text-xs font-bold uppercase tracking-widest text-cyan-400">
+      <div className="rounded-3xl border border-slate-200 bg-white p-8 sm:p-10 shadow-xs">
+        <span className="text-xs font-bold uppercase tracking-widest text-blue-600">
           Get In Touch
         </span>
-        <h1 className="mt-2 text-3xl sm:text-4xl font-extrabold text-white">
+        <h1 className="mt-2 text-3xl sm:text-4xl font-extrabold text-slate-900">
           Contact WS Smart Solution
         </h1>
-        <p className="mt-2 text-sm text-slate-300 max-w-2xl">
+        <p className="mt-2 text-sm text-slate-600 max-w-2xl">
           Reach out to order tech hardware, book a Windows/Linux OS setup or battery replacement, or discuss a custom IoT/software engineering project.
         </p>
       </div>
@@ -56,36 +56,36 @@ export default function ContactPage() {
       <div className="grid grid-cols-1 gap-8 lg:grid-cols-12">
         {/* Left: Direct Contact Info Cards */}
         <div className="lg:col-span-5 space-y-4">
-          <div className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 space-y-5">
-            <h2 className="text-lg font-extrabold text-white">
+          <div className="rounded-2xl border border-slate-200 bg-white p-6 space-y-5 shadow-xs">
+            <h2 className="text-lg font-extrabold text-slate-900">
               Store & Service Desk Information
             </h2>
 
             <div className="flex items-start gap-3.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-cyan-500/15 text-cyan-400 shrink-0">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shrink-0">
                 <MapPin className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                   Location
                 </h3>
-                <p className="mt-0.5 text-sm font-semibold text-white">
+                <p className="mt-0.5 text-sm font-semibold text-slate-900">
                   {SITE_CONFIG.contact.address}
                 </p>
               </div>
             </div>
 
             <div className="flex items-start gap-3.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-500/15 text-emerald-400 shrink-0">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-emerald-50 text-emerald-600 shrink-0">
                 <PhoneCall className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                   Phone & WhatsApp Hotline
                 </h3>
                 <a
                   href={`tel:${SITE_CONFIG.contact.phone}`}
-                  className="mt-0.5 block text-sm font-semibold text-white hover:text-cyan-400"
+                  className="mt-0.5 block text-sm font-semibold text-slate-900 hover:text-blue-600"
                 >
                   {SITE_CONFIG.contact.phone}
                 </a>
@@ -93,16 +93,16 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-start gap-3.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500/15 text-blue-400 shrink-0">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-50 text-blue-600 shrink-0">
                 <Mail className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                   Official Email
                 </h3>
                 <a
                   href={`mailto:${SITE_CONFIG.contact.email}`}
-                  className="mt-0.5 block text-sm font-semibold text-white hover:text-cyan-400"
+                  className="mt-0.5 block text-sm font-semibold text-slate-900 hover:text-blue-600"
                 >
                   {SITE_CONFIG.contact.email}
                 </a>
@@ -110,14 +110,14 @@ export default function ContactPage() {
             </div>
 
             <div className="flex items-start gap-3.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-500/15 text-amber-400 shrink-0">
+              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-amber-50 text-amber-600 shrink-0">
                 <Clock className="h-5 w-5" />
               </div>
               <div>
-                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-400">
+                <h3 className="text-xs font-bold uppercase tracking-wider text-slate-500">
                   Service Hours
                 </h3>
-                <p className="mt-0.5 text-sm font-semibold text-white">
+                <p className="mt-0.5 text-sm font-semibold text-slate-900">
                   {SITE_CONFIG.contact.businessHours}
                 </p>
               </div>
@@ -131,9 +131,9 @@ export default function ContactPage() {
                     'Computer OS Installation / Battery Service'
                   )
                 }
-                className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-500/40 bg-emerald-500/15 py-3 text-xs font-bold text-emerald-300 hover:bg-emerald-500/25 transition cursor-pointer"
+                className="flex w-full items-center justify-center gap-2 rounded-xl border border-emerald-300 bg-emerald-50 py-3 text-xs font-bold text-emerald-800 hover:bg-emerald-100 transition cursor-pointer"
               >
-                <Wrench className="h-4 w-4" />
+                <Wrench className="h-4 w-4 text-emerald-600" />
                 Open Quick Service Booking Modal
               </button>
             </div>
@@ -144,19 +144,19 @@ export default function ContactPage() {
         <div className="lg:col-span-7">
           <form
             onSubmit={handleDirectWhatsApp}
-            className="rounded-2xl border border-slate-800 bg-slate-900/50 p-6 sm:p-8 space-y-4"
+            className="rounded-2xl border border-slate-200 bg-white p-6 sm:p-8 space-y-4 shadow-xs"
           >
-            <div className="flex items-center gap-2 text-cyan-400 text-xs font-bold uppercase tracking-wider">
+            <div className="flex items-center gap-2 text-blue-600 text-xs font-bold uppercase tracking-wider">
               <MessageSquare className="h-4 w-4" />
               <span>Instant Message</span>
             </div>
-            <h2 className="text-xl font-extrabold text-white">
+            <h2 className="text-xl font-extrabold text-slate-900">
               Send Us a Direct Inquiry
             </h2>
 
             <div className="grid grid-cols-1 gap-4 sm:grid-cols-2">
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
+                <label className="block text-xs font-semibold text-slate-700 mb-1">
                   Your Full Name *
                 </label>
                 <input
@@ -165,11 +165,11 @@ export default function ContactPage() {
                   value={name}
                   onChange={(e) => setName(e.target.value)}
                   placeholder="Enter your name"
-                  className="w-full rounded-xl border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-blue-500 focus:outline-none"
                 />
               </div>
               <div>
-                <label className="block text-xs font-medium text-slate-300 mb-1">
+                <label className="block text-xs font-semibold text-slate-700 mb-1">
                   Phone / WhatsApp Number *
                 </label>
                 <input
@@ -178,19 +178,19 @@ export default function ContactPage() {
                   value={phone}
                   onChange={(e) => setPhone(e.target.value)}
                   placeholder="017XXXXXXXX"
-                  className="w-full rounded-xl border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none"
+                  className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-blue-500 focus:outline-none"
                 />
               </div>
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 mb-1">
                 Inquiry Topic
               </label>
               <select
                 value={topic}
                 onChange={(e) => setTopic(e.target.value)}
-                className="w-full rounded-xl border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-sm text-white focus:border-cyan-500 focus:outline-none"
+                className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 focus:border-blue-500 focus:outline-none"
               >
                 <option value="OS Installation / Battery Service">
                   OS Installation / Battery Service
@@ -208,7 +208,7 @@ export default function ContactPage() {
             </div>
 
             <div>
-              <label className="block text-xs font-medium text-slate-300 mb-1">
+              <label className="block text-xs font-semibold text-slate-700 mb-1">
                 How Can We Help You? *
               </label>
               <textarea
@@ -217,13 +217,13 @@ export default function ContactPage() {
                 value={message}
                 onChange={(e) => setMessage(e.target.value)}
                 placeholder="Write your device model, required product, or project requirements..."
-                className="w-full rounded-xl border border-slate-800 bg-slate-950 px-3.5 py-2.5 text-sm text-white placeholder-slate-500 focus:border-cyan-500 focus:outline-none"
+                className="w-full rounded-xl border border-slate-300 bg-white px-3.5 py-2.5 text-sm text-slate-900 placeholder-slate-400 focus:border-blue-500 focus:outline-none"
               />
             </div>
 
             <button
               type="submit"
-              className="flex w-full items-center justify-center gap-2 rounded-xl bg-gradient-to-r from-cyan-500 to-blue-600 py-3.5 text-sm font-extrabold text-slate-950 shadow-lg shadow-cyan-500/20 hover:brightness-110 transition cursor-pointer"
+              className="flex w-full items-center justify-center gap-2 rounded-xl bg-blue-600 py-3.5 text-sm font-extrabold text-white shadow-xs hover:bg-blue-700 transition cursor-pointer"
             >
               <Send className="h-4 w-4" />
               Send Message via WhatsApp
@@ -234,4 +234,3 @@ export default function ContactPage() {
     </div>
   );
 }
-
