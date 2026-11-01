@@ -23,7 +23,7 @@ export default function ContactPage() {
   const handleDirectWhatsApp = (e: React.FormEvent) => {
     e.preventDefault();
     const text = [
-      `*INQUIRY — ${SITE_CONFIG.name} (${SITE_CONFIG.domain})*`,
+      `*INQUIRY — ${SITE_CONFIG.name}*`,
       `*Name:* ${name}`,
       `*Phone:* ${phone}`,
       `*Topic:* ${topic}`,

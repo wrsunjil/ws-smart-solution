@@ -39,7 +39,7 @@ export default function CartDrawer() {
 
   const generateOrderSummaryText = () => {
     const lines = [
-      `*NEW ORDER — ${SITE_CONFIG.name} (${SITE_CONFIG.domain})*`,
+      `*NEW ORDER — ${SITE_CONFIG.name}*`,
       `-----------------------------------------`,
       `*Customer:* ${customerName || 'Guest Customer'}`,
       `*Phone:* ${customerPhone || 'Not provided'}`,

@@ -17,10 +17,9 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description:
-    'WS Smart Solution (wssmartsolution.pages.dev) offers genuine computer hardware, SSDs, laptop & UPS batteries, Windows/Linux OS installation, battery pack rebuilding, OpenWrt routers, and custom IoT & software engineering solutions.',
+    'WS Smart Solution offers genuine computer hardware, SSDs, laptop & UPS batteries, Windows/Linux OS installation, battery pack rebuilding, OpenWrt routers, and custom IoT & software engineering solutions.',
   keywords: [
     'WS Smart Solution',
-    'wssmartsolution.pages.dev',
     'Computer OS Installation',
     'Windows 11 Installation Service',
     'Laptop Battery Replacement',
@@ -45,7 +44,7 @@ export const metadata: Metadata = {
   },
   twitter: {
     card: 'summary_large_image',
-    title: `${SITE_CONFIG.name} (${SITE_CONFIG.domain})`,
+    title: SITE_CONFIG.name,
     description: SITE_CONFIG.description,
   },
   robots: {

@@ -24,11 +24,11 @@ export default function Footer() {
                 <Cpu className="h-6 w-6" />
               </div>
               <div>
-                <span className="block text-lg font-extrabold text-slate-900">
+                <span className="block text-lg font-extrabold text-slate-900 leading-none">
                   WS Smart <span className="text-blue-600">Solution</span>
                 </span>
-                <span className="block text-xs font-semibold text-slate-500">
-                  {SITE_CONFIG.domain}
+                <span className="block text-xs font-semibold text-slate-500 mt-1">
+                  Tech Store & Service Lab
                 </span>
               </div>
             </Link>
@@ -152,7 +152,7 @@ export default function Footer() {
 
         <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs sm:flex-row">
           <p className="text-slate-600">
-            © {new Date().getFullYear()} <strong>{SITE_CONFIG.name}</strong> ({SITE_CONFIG.domain}). All rights reserved.
+            © {new Date().getFullYear()} <strong>{SITE_CONFIG.name}</strong>. All rights reserved.
           </p>
           <div className="flex items-center gap-4">
             <span className="inline-flex items-center gap-1.5 text-slate-600">

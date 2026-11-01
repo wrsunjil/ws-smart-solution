@@ -49,11 +49,11 @@ export default function Navbar() {
             <Cpu className="h-6 w-6" />
           </div>
           <div>
-            <span className="block text-lg font-extrabold tracking-tight text-slate-900">
+            <span className="block text-lg font-extrabold tracking-tight text-slate-900 leading-none">
               WS Smart <span className="text-blue-600">Solution</span>
             </span>
-            <span className="block text-[11px] font-semibold uppercase tracking-wider text-slate-500">
-              wssmartsolution.pages.dev
+            <span className="block text-[11px] font-semibold tracking-wide text-slate-500 mt-0.5">
+              Tech Store & Service Lab
             </span>
           </div>
         </Link>
