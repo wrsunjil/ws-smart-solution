@@ -1,0 +1,6 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://wssmartsolution.pages.dev/sitemap.xml
+Host: https://wssmartsolution.pages.dev
+
