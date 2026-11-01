@@ -53,7 +53,7 @@ export default function Navbar() {
               WS Smart <span className="text-cyan-400">Solution</span>
             </span>
             <span className="block text-[11px] font-medium uppercase tracking-widest text-slate-400">
-              wsss.pages.dev
+              wssmartsolution.pages.dev
             </span>
           </div>
         </Link>

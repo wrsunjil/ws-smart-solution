@@ -16,10 +16,10 @@ export const metadata: Metadata = {
     template: `%s | ${SITE_CONFIG.name}`,
   },
   description:
-    'WS Smart Solution (wsss.pages.dev) offers genuine computer hardware, SSDs, laptop & UPS batteries, Windows/Linux OS installation, battery pack rebuilding, OpenWrt routers, and custom IoT & software engineering solutions.',
+    'WS Smart Solution (wssmartsolution.pages.dev) offers genuine computer hardware, SSDs, laptop & UPS batteries, Windows/Linux OS installation, battery pack rebuilding, OpenWrt routers, and custom IoT & software engineering solutions.',
   keywords: [
     'WS Smart Solution',
-    'wsss.pages.dev',
+    'wssmartsolution.pages.dev',
     'Computer OS Installation',
     'Windows 11 Installation Service',
     'Laptop Battery Replacement',

@@ -1,11 +1,11 @@
-# WS Smart Solution (`wsss.pages.dev`)
+# WS Smart Solution (`wssmartsolution.pages.dev`)
 
 Official static e-commerce store, computer OS & battery service center, and full-stack software & IoT portfolio for **WS Smart Solution**.
 
 ## Architecture & Lifetime Hosting (`$0/month`)
 - **Framework:** Next.js 15 (`output: 'export'` Static Site Generation)
 - **Styling:** Tailwind CSS v4 + Lucide Icons
-- **Hosting:** Cloudflare Pages (`https://wsss.pages.dev`)
+- **Hosting:** Cloudflare Pages (`https://wssmartsolution.pages.dev`)
 - **SEO:** Pre-rendered HTML, JSON-LD Rich Snippets (`LocalBusiness`, `ComputerStore`, `ComputerRepair`, `OfferCatalog`), automated `sitemap.xml` and `robots.txt`.
 
 ## How to Customize Contact Info, Products, Services, or Portfolio
@@ -22,7 +22,7 @@ npm run dev
 # Build static production files into ./out
 npm run build
 
-# Deploy directly to Cloudflare Pages (wsss.pages.dev)
+# Deploy directly to Cloudflare Pages (wssmartsolution.pages.dev)
 npm run deploy
 ```
 

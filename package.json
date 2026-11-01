@@ -6,7 +6,7 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve@latest out",
-    "deploy": "next build && npx wrangler pages deploy out --project-name=wsss"
+    "deploy": "next build && npx wrangler pages deploy out --project-name=wssmartsolution"
   },
   "dependencies": {
     "lucide-react": "^0.546.0",
