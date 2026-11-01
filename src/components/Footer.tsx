@@ -7,7 +7,6 @@ import {
   MapPin,
   Clock,
   ShieldCheck,
-  Globe,
   ArrowUpRight,
 } from 'lucide-react';
 import { SITE_CONFIG } from '@/data/siteConfig';
@@ -32,7 +31,7 @@ export default function Footer() {
             </p>
             <div className="flex items-center gap-2 text-xs text-emerald-700 font-semibold">
               <ShieldCheck className="h-4 w-4" />
-              Hosted Permanently on Cloudflare Global Edge
+              100% Authentic Products & Official Warranty
             </div>
           </div>
 
@@ -145,19 +144,13 @@ export default function Footer() {
           </div>
         </div>
 
-        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs sm:flex-row">
-          <p className="text-slate-600">
+        <div className="mt-10 flex flex-col items-center justify-between gap-4 border-t border-slate-200 pt-6 text-xs sm:flex-row text-slate-500">
+          <p>
             © {new Date().getFullYear()} <strong>{SITE_CONFIG.name}</strong>. All rights reserved.
           </p>
-          <div className="flex items-center gap-4">
-            <span className="inline-flex items-center gap-1.5 text-slate-600">
-              <Globe className="h-3.5 w-3.5 text-blue-600" />
-              100% Static Edge Architecture
-            </span>
-            <Link href="/sitemap.xml" className="hover:text-blue-600 transition">
-              Sitemap
-            </Link>
-          </div>
+          <p>
+            Computer Hardware, OS Installation & Battery Service Center
+          </p>
         </div>
       </div>
     </footer>
