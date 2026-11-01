@@ -74,8 +74,10 @@ export default function HomePage() {
 
             {/* Headline */}
             <h1 className="text-3xl font-extrabold tracking-tight text-slate-900 sm:text-5xl lg:text-6xl leading-tight">
-              WS Smart{' '}
-              <span className="text-blue-600">Solution</span>
+              WS Smart <span className="text-blue-600">Solution</span>{' '}
+              <span className="text-2xl sm:text-4xl text-slate-400 font-bold block sm:inline">
+                (WSSS)
+              </span>
             </h1>
 
             {/* Subtitle */}

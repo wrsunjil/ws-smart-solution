@@ -27,8 +27,8 @@ export default function Footer() {
                 <span className="block text-lg font-extrabold text-slate-900 leading-none">
                   WS Smart <span className="text-blue-600">Solution</span>
                 </span>
-                <span className="block text-xs font-semibold text-slate-500 mt-1">
-                  Tech Store & Service Lab
+                <span className="block text-xs font-extrabold tracking-widest text-blue-600 mt-1">
+                  WSSS
                 </span>
               </div>
             </Link>

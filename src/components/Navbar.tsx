@@ -52,8 +52,8 @@ export default function Navbar() {
             <span className="block text-lg font-extrabold tracking-tight text-slate-900 leading-none">
               WS Smart <span className="text-blue-600">Solution</span>
             </span>
-            <span className="block text-[11px] font-semibold tracking-wide text-slate-500 mt-0.5">
-              Tech Store & Service Lab
+            <span className="block text-xs font-extrabold tracking-widest text-blue-600 mt-1">
+              WSSS
             </span>
           </div>
         </Link>
