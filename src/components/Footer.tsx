@@ -19,18 +19,13 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-3">
+            <Link href="/" className="flex items-center gap-2.5">
               <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white">
-                <Cpu className="h-6 w-6" />
+                <Cpu className="h-5 w-5" />
               </div>
-              <div>
-                <span className="block text-lg font-extrabold text-slate-900 leading-none">
-                  WS Smart <span className="text-blue-600">Solution</span>
-                </span>
-                <span className="block text-xs font-extrabold tracking-widest text-blue-600 mt-1">
-                  WSSS
-                </span>
-              </div>
+              <span className="text-2xl font-black tracking-tight text-slate-900">
+                WSSS
+              </span>
             </Link>
             <p className="text-sm leading-relaxed text-slate-600">
               {SITE_CONFIG.description}
