@@ -44,9 +44,9 @@ export default function Navbar() {
     <header className="sticky top-0 z-40 w-full border-b border-slate-200 bg-white/95 backdrop-blur-md">
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Brand Logo */}
-        <Link href="/" className="flex items-center gap-2.5 group">
+        <Link href="/" className="flex items-center gap-2.5 group" title="WSSS — Home">
           <LogoIcon className="h-9 w-9" />
-          <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+          <span className="text-2xl font-black tracking-tight text-slate-900">
             WSSS
           </span>
         </Link>

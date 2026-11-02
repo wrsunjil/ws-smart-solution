@@ -18,9 +18,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2.5 group">
+            <Link href="/" className="flex items-center gap-2.5 group" title="WSSS — Home">
               <LogoIcon className="h-9 w-9" />
-              <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
+              <span className="text-2xl font-black tracking-tight text-slate-900">
                 WSSS
               </span>
             </Link>
