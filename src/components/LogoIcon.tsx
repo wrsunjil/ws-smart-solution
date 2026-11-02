@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function LogoIcon({ className = 'h-10 w-10' }: { className?: string }) {
   return (
-    <div className={`relative shrink-0 ${className} group-hover:scale-105 transition-transform duration-200`}>
+    <div className={`relative shrink-0 ${className}`}>
       <svg
         viewBox="0 0 512 512"
         fill="none"
