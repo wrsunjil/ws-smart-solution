@@ -116,7 +116,7 @@ export default function HomePage() {
                 className="inline-flex items-center gap-2 rounded-xl border border-slate-300 bg-white px-6 py-3.5 text-sm font-bold text-slate-700 hover:border-blue-400 hover:text-blue-600 transition shadow-xs"
               >
                 <FolderGit2 className="h-4 w-4" />
-                Explore 12+ Projects
+                Explore Projects
               </Link>
             </div>
           </div>
@@ -131,7 +131,7 @@ export default function HomePage() {
                 Tech Hardware & E-Commerce Store
               </h2>
               <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                High-speed NVMe/SATA SSDs, DDR4/DDR5 RAM, pre-flashed OpenWrt hotspot routers, SafePrint Linux boxes, and genuine digital OS licenses.
+                High-speed NVMe/SATA SSDs, DDR4/DDR5 RAM, pre-flashed OpenWrt hotspot routers, and SafePrint Linux boxes.
               </p>
             </div>
 
@@ -155,23 +155,9 @@ export default function HomePage() {
                 Full-Stack, AI & IoT Engineering
               </h2>
               <p className="mt-2 text-xs leading-relaxed text-slate-600">
-                Proven portfolio of 12+ production systems including PublicWiFi bKash routers, Smart Irrigation IoT, SafePrint CUPS servers, and AI SaaS tools.
+                Proven portfolio of production systems including PublicWiFi bKash routers, SafePrint CUPS servers, and AI SaaS tools.
               </p>
             </div>
-          </div>
-
-          {/* Business Stats Ribbon */}
-          <div className="mt-10 grid grid-cols-2 gap-4 rounded-2xl border border-slate-200 bg-white p-6 shadow-xs sm:grid-cols-4">
-            {SITE_CONFIG.stats.map((st) => (
-              <div key={st.label} className="text-center">
-                <span className="block text-2xl sm:text-3xl font-extrabold text-slate-900">
-                  {st.value}
-                </span>
-                <span className="mt-1 block text-xs font-semibold text-slate-500">
-                  {st.label}
-                </span>
-              </div>
-            ))}
           </div>
         </div>
       </section>

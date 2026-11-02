@@ -33,7 +33,7 @@ export default function PortfolioPage() {
             WS Smart Solution Engineering Showcase
           </span>
           <h1 className="mt-3 text-3xl sm:text-4xl font-extrabold text-slate-900">
-            12+ Production Projects across IoT, Embedded Linux, AI & E-Commerce
+            Production Projects across IoT, Embedded Linux, AI & E-Commerce
           </h1>
           <p className="mt-3 text-sm sm:text-base text-slate-600 leading-relaxed">
             Explore our complete engineering portfolio—ranging from automated OpenWrt bKash WiFi hotspot firmware and Armbian Linux cloud print servers to AI-powered Bangla OCR platforms and full-stack Next.js + Flutter ecosystems.

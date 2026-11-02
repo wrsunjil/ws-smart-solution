@@ -6,8 +6,7 @@ export interface ProductItem {
     | 'Batteries & Power'
     | 'Storage & RAM'
     | 'Smart IoT & Routers'
-    | 'Audio & Gadgets'
-    | 'Software & OS Licenses';
+    | 'Audio & Gadgets';
   priceBDT: number;
   originalPriceBDT?: number;
   priceUSD: number;
@@ -224,29 +223,6 @@ export const PRODUCTS: ProductItem[] = [
       '45ms ultra-low latency mode for gaming and video editing',
       'IPX5 sweat & splash resistance for daily commute',
       '10 minutes Type-C charge delivers 2 hours of playback',
-    ],
-  },
-  {
-    id: 'prod-windows-office-license',
-    sku: 'WSSS-SW-401',
-    name: 'Genuine Windows 11 Pro + Office 2021 Pro Plus Lifetime Digital License',
-    category: 'Software & OS Licenses',
-    priceBDT: 1250,
-    originalPriceBDT: 1800,
-    priceUSD: 12,
-    inStock: true,
-    rating: 5.0,
-    reviewsCount: 140,
-    badge: 'Instant Delivery',
-    warranty: 'Lifetime Motherboard Bind Guarantee',
-    shortSpec: 'Retail/OEM Digital Key | Official Microsoft Updates | Instant WhatsApp Delivery',
-    description:
-      'Activate your Windows 10/11 Pro and Microsoft Office suite permanently with genuine digital retail keys linked directly to your motherboard hardware ID.',
-    highlights: [
-      'Instant digital delivery via WhatsApp & Email within 10 minutes',
-      'Supports full official Windows Update and Microsoft Defender features',
-      'Remains active even after formatting and reinstalling Windows',
-      'Free remote activation support via AnyDesk / TeamViewer if needed',
     ],
   },
 ];

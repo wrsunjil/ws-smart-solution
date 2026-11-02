@@ -15,7 +15,6 @@ export default function ShopPage() {
     'Storage & RAM',
     'Smart IoT & Routers',
     'Audio & Gadgets',
-    'Software & OS Licenses',
   ];
 
   const filteredProducts = PRODUCTS.filter((product) => {
@@ -40,7 +39,7 @@ export default function ShopPage() {
           Tech Hardware, Batteries & Smart IoT Store
         </h1>
         <p className="mt-2 text-sm text-slate-600 max-w-2xl">
-          Browse our curated inventory of high-speed SSDs, DDR4/DDR5 RAM, Grade-A laptop & UPS batteries, pre-flashed OpenWrt hotspot routers, and genuine digital licenses.
+          Browse our curated inventory of high-speed SSDs, DDR4/DDR5 RAM, Grade-A laptop & UPS batteries, and pre-flashed OpenWrt hotspot routers.
         </p>
 
         <div className="mt-6 flex flex-wrap gap-4 text-xs text-slate-700 font-semibold">
