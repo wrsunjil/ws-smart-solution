@@ -21,8 +21,6 @@ export default function Navbar() {
   const {
     totalItems,
     setIsCartOpen,
-    currency,
-    setCurrency,
     setBookingServiceTitle,
   } = useStore();
   const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -75,34 +73,6 @@ export default function Navbar() {
 
         {/* Right Actions */}
         <div className="flex items-center gap-2.5">
-          {/* Currency Switcher */}
-          <div className="flex items-center rounded-lg border border-slate-200 bg-slate-50 p-0.5 text-xs font-semibold">
-            <button
-              type="button"
-              onClick={() => setCurrency('BDT')}
-              className={`rounded-md px-2.5 py-1 transition-all ${
-                currency === 'BDT'
-                  ? 'bg-white text-blue-700 font-bold shadow-xs'
-                  : 'text-slate-500 hover:text-slate-900'
-              }`}
-              title="Display prices in Bangladeshi Taka (৳)"
-            >
-              ৳ BDT
-            </button>
-            <button
-              type="button"
-              onClick={() => setCurrency('USD')}
-              className={`rounded-md px-2.5 py-1 transition-all ${
-                currency === 'USD'
-                  ? 'bg-white text-blue-700 font-bold shadow-xs'
-                  : 'text-slate-500 hover:text-slate-900'
-              }`}
-              title="Display prices in US Dollars ($)"
-            >
-              $ USD
-            </button>
-          </div>
-
           {/* Quick Service Booking Button */}
           <button
             type="button"

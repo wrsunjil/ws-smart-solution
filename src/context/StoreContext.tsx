@@ -42,10 +42,8 @@ export function StoreProvider({ children }: { children: React.ReactNode }) {
       if (savedCart) {
         setCart(JSON.parse(savedCart));
       }
-      const savedCurrency = localStorage.getItem('wsss_currency_v1') as Currency | null;
-      if (savedCurrency === 'BDT' || savedCurrency === 'USD') {
-        setCurrency(savedCurrency);
-      }
+      localStorage.removeItem('wsss_currency_v1');
+      setCurrency('BDT');
     } catch {
       // Ignore storage errors
     }

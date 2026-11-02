@@ -75,8 +75,8 @@ export const SERVICES: ServiceItem[] = [
       'Transform standard routers into automated Public WiFi hotspots or convert Android TV Boxes into Armbian Linux print/cloud servers.',
     fullDescription:
       'Leverage our deep embedded-systems expertise. Whether you want to unbrick an Amlogic S905W/TX3 Mini TV box, flash Armbian Linux to run a 24/7 CUPS Print Server, or install custom OpenWrt captive-portal firmware on your router, we handle UART/SPI/USB flashing safely.',
-    priceBDT: 800,
-    priceUSD: 8,
+    priceBDT: 1000,
+    priceUSD: 10,
     priceLabel: 'Per Device Setup',
     turnaroundTime: '1 – 2 Hours',
     warranty: 'Guaranteed Stable Boot & Config',
@@ -99,8 +99,8 @@ export const SERVICES: ServiceItem[] = [
       'High-conductivity thermal paste application, cooling fan restoration, NVMe SSD migration, and full motherboard diagnostics.',
     fullDescription:
       'Overheating laptops throttle CPU speed by up to 60% and damage battery longevity. We disassemble your cooling module, ultrasonic-clean dust buildup, apply high-performance thermal compound, and upgrade old HDDs to blazing-fast NVMe/SATA SSDs.',
-    priceBDT: 600,
-    priceUSD: 6,
+    priceBDT: 1500,
+    priceUSD: 15,
     priceLabel: 'Full Servicing Package',
     turnaroundTime: '1 Hour',
     warranty: '15 Days Service Guarantee',
