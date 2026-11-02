@@ -25,8 +25,8 @@ export const SERVICES: ServiceItem[] = [
       'Clean installation of Windows 10/11 Pro or Linux distros with full driver calibration, UEFI/GPT tuning, and essential productivity software.',
     fullDescription:
       'Give your desktop or laptop a brand-new, ultra-responsive feel. We perform a clean UEFI/GPT operating system installation without losing your personal partition data, install genuine OEM hardware drivers, optimize background telemetry for maximum FPS and battery life, and bundle essential daily software.',
-    priceBDT: 500,
-    priceUSD: 5,
+    priceBDT: 600,
+    priceUSD: 6,
     priceLabel: 'Starts from',
     turnaroundTime: '45 – 90 Minutes',
     warranty: '30 Days Free Re-check Support',
@@ -50,8 +50,8 @@ export const SERVICES: ServiceItem[] = [
       'Expert laptop battery replacement, Lithium-Ion / LiFePO4 pack cell balancing, BMS repair, and UPS/IPS battery restoration.',
     fullDescription:
       'Experiencing sudden power drops, "Plugged in, not charging" errors, or degraded backup time? Our battery lab diagnoses individual cell internal resistance (IR), repairs faulty BMS boards, replaces worn-out 18650/Li-Polymer cells, and supplies brand-new OEM laptop and UPS batteries.',
-    priceBDT: 400,
-    priceUSD: 4,
+    priceBDT: 600,
+    priceUSD: 6,
     priceLabel: 'Diagnostics & Servicing from',
     turnaroundTime: '1 – 3 Hours',
     warranty: 'Up to 6 Months Replacement Warranty on New Cells',
