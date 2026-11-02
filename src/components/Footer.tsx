@@ -1,7 +1,6 @@
 import React from 'react';
 import Link from 'next/link';
 import {
-  Cpu,
   Phone,
   Mail,
   MapPin,
@@ -9,6 +8,7 @@ import {
   ShieldCheck,
   ArrowUpRight,
 } from 'lucide-react';
+import LogoIcon from '@/components/LogoIcon';
 import { SITE_CONFIG } from '@/data/siteConfig';
 
 export default function Footer() {
@@ -18,11 +18,9 @@ export default function Footer() {
         <div className="grid grid-cols-1 gap-10 md:grid-cols-2 lg:grid-cols-4">
           {/* Column 1: Brand */}
           <div className="space-y-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white">
-                <Cpu className="h-5 w-5" />
-              </div>
-              <span className="text-2xl font-black tracking-tight text-slate-900">
+            <Link href="/" className="flex items-center gap-2.5 group">
+              <LogoIcon className="h-9 w-9" />
+              <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
                 WSSS
               </span>
             </Link>

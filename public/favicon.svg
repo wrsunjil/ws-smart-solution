@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <defs>
+    <!-- Premium Linear Gradient for Brand -->
+    <linearGradient id="wsssBlue" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2563eb"/>
+      <stop offset="100%" stop-color="#1d4ed8"/>
+    </linearGradient>
+    <linearGradient id="wsssCyan" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#06b6d4"/>
+    </linearGradient>
+    <filter id="softGlow" x="-20%" y="-20%" width="140%" height="140%">
+      <feDropShadow dx="0" dy="8" stdDeviation="16" flood-color="#1d4ed8" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- Squircle Emblem Container -->
+  <rect x="32" y="32" width="448" height="448" rx="112" fill="url(#wsssBlue)" filter="url(#softGlow)"/>
+
+  <!-- Subtle Inner Circuit Accent Grid -->
+  <path d="M96 256h48 M368 256h48 M256 96v48 M256 368v48" stroke="#60a5fa" stroke-width="6" stroke-linecap="round" opacity="0.4"/>
+  <circle cx="144" cy="256" r="6" fill="#93c5fd" opacity="0.6"/>
+  <circle cx="368" cy="256" r="6" fill="#93c5fd" opacity="0.6"/>
+  <circle cx="256" cy="144" r="6" fill="#93c5fd" opacity="0.6"/>
+  <circle cx="256" cy="368" r="6" fill="#93c5fd" opacity="0.6"/>
+
+  <!-- Stylized Geometric "W" & Smart Circuit Core -->
+  <!-- Left Wing -->
+  <path d="M128 176 L192 344 L256 224 L320 344 L384 176" 
+        fill="none" 
+        stroke="#ffffff" 
+        stroke-width="36" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Dynamic Energy Flow Overlay (Cyan Tech Accent) -->
+  <path d="M192 344 L256 224 L320 344" 
+        fill="none" 
+        stroke="url(#wsssCyan)" 
+        stroke-width="36" 
+        stroke-linecap="round" 
+        stroke-linejoin="round"/>
+
+  <!-- Smart Node Connectors (Microchip / Hardware Nodes) -->
+  <circle cx="128" cy="176" r="16" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="384" cy="176" r="16" fill="#38bdf8" stroke="#ffffff" stroke-width="6"/>
+  <circle cx="256" cy="224" r="14" fill="#ffffff"/>
+  <circle cx="192" cy="344" r="12" fill="#ffffff"/>
+  <circle cx="320" cy="344" r="12" fill="#ffffff"/>
+</svg>

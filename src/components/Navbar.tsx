@@ -6,7 +6,6 @@ import { usePathname } from 'next/navigation';
 import {
   ShoppingCart,
   Wrench,
-  Cpu,
   Menu,
   X,
   FolderGit2,
@@ -14,6 +13,7 @@ import {
   Store,
   PhoneCall,
 } from 'lucide-react';
+import LogoIcon from '@/components/LogoIcon';
 import { useStore } from '@/context/StoreContext';
 
 export default function Navbar() {
@@ -45,9 +45,7 @@ export default function Navbar() {
       <div className="mx-auto flex max-w-7xl items-center justify-between px-4 py-3 sm:px-6 lg:px-8">
         {/* Brand Logo */}
         <Link href="/" className="flex items-center gap-2.5 group">
-          <div className="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-600 text-white shadow-xs group-hover:bg-blue-700 transition">
-            <Cpu className="h-5 w-5" />
-          </div>
+          <LogoIcon className="h-9 w-9" />
           <span className="text-2xl font-black tracking-tight text-slate-900 group-hover:text-blue-600 transition-colors">
             WSSS
           </span>
